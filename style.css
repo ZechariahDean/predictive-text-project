@@ -1,0 +1,51 @@
+:focus {
+ outline: none;
+}
+
+html {
+  background-image: linear-gradient(45deg, red, orange 65%);
+  height: 100%;
+  width: 100%;
+}
+
+input {
+ border: none;
+}
+
+.search-container {
+ position: absolute;
+ top: 40%;
+ left: 40%;
+ width: 250px;
+}
+.search-container input,
+.search-container .suggestions {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.search-container input {
+ margin: auto;
+ text-align: center;
+ width: 99%;
+}
+.search-container .suggestions {
+  margin: auto;
+  background-color: bisque;
+  transition: all 1s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  text-align: center;
+  width: fit-content;
+}
+ul li:hover {
+  background-color: rgb(94, 255, 94);
+  cursor: pointer;
+}
